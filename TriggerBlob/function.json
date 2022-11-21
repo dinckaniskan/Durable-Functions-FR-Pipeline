@@ -1,0 +1,25 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",      
+      "path": "blob-trigger/{name}",
+      "connection": "AzureBlobStorage",
+      "direction": "in"
+    },
+    {
+      "name": "starter",
+      "type": "durableClient",
+      "direction": "in"
+    },
+    {
+      "name": "execution",
+      "type": "table",
+      "tableName": "executions",
+      "partitionKey": "execution",
+      "connection": "AzureTableStorage",
+      "direction": "out"
+    }
+  ]
+}
