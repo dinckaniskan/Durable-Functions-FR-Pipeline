@@ -28,3 +28,12 @@ For more information on deployment options for Azure Functions, please visit thi
 * To learn more about developing Azure Functions, please visit [Azure Functions Developer Guide](https://aka.ms/azure-functions/python/developer-guide).
 
 * To learn more specific guidance on developing Azure Functions with Python, please visit [Azure Functions Developer Python Guide](https://aka.ms/azure-functions/python/python-developer-guide).
+
+
+![Alt text](assets/FR%20HDL-HLD.drawio.svg "a title")
+
+![Alt text](assets/FR%20HDL-App%20Exp%20-%20Example%201.drawio.svg "a title")
+![Alt text](assets/FR%20HDL-App%20Exp%20-%20Example%202.drawio.svg "a title")
+![Alt text](assets/FR%20HDL-App%20Exp%20-%20Example%203.drawio.svg "a title")
+
+![Alt text](assets/FR%20HDL-Network.drawio.svg "a title")
