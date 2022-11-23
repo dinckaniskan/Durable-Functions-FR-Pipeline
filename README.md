@@ -30,17 +30,23 @@ For more information on deployment options for Azure Functions, please visit thi
 * To learn more specific guidance on developing Azure Functions with Python, please visit [Azure Functions Developer Python Guide](https://aka.ms/azure-functions/python/python-developer-guide).
 
 
-#### High-Level Solution Architecture
-![Alt text](assets/HDL.svg "a title")
+### High-Level Solution Architecture
+![Alt text](assets/HLD.svg "a title")
 
-#### Application Architecture - Example 1
-![Alt text](assets/App%20Exp%20-%20Example%201.svg "a title")
+### Application Architecture - Example 1
+![Alt text](assets/App_Exp_Example_1.svg "a title")
 
-#### Application Architecture - Example 2
-![Alt text](assets/App%20Exp%20-%20Example%202.svg "a title")
+### Application Architecture - Example 2
+![Alt text](assets/App_Exp_Example_2.svg "a title")
 
-#### Application Architecture - Example 3
-![Alt text](assets/App%20Exp%20-%20Example%203.svg "a title")
+### Application Architecture - Example 3
+![Alt text](assets/App_Exp_Example_3.svg "a title")
 
-#### Network Architecture
+### Workflow - Single Document
+![Alt text](assets/Workflow_Single_Document.svg "a title")
+
+### Workflow - Multiple Documents
+![Alt text](assets/Workflow_Multiple_Documents.svg "a title")
+
+### Network Architecture
 ![Alt text](assets/Network.svg "a title")
