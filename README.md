@@ -1,52 +1,61 @@
-## Getting Started with Azure Function
-### Last updated: March 8th 2021
 
-#### Project Structure
-The main project folder (<project_root>) can contain the following files:
+## What are Azure Functions?
 
-* **local.settings.json** - Used to store app settings and connection strings when running locally. This file doesn't get published to Azure. To learn more, see [local.settings.file](https://aka.ms/azure-functions/python/local-settings).
-* **requirements.txt** - Contains the list of Python packages the system installs when publishing to Azure.
-* **host.json** - Contains global configuration options that affect all functions in a function app. This file does get published to Azure. Not all options are supported when running locally. To learn more, see [host.json](https://aka.ms/azure-functions/python/host.json).
-* **.vscode/** - (Optional) Contains store VSCode configuration. To learn more, see [VSCode setting](https://aka.ms/azure-functions/python/vscode-getting-started).
-* **.venv/** - (Optional) Contains a Python virtual environment used by local development.
-* **Dockerfile** - (Optional) Used when publishing your project in a [custom container](https://aka.ms/azure-functions/python/custom-container).
-* **tests/** - (Optional) Contains the test cases of your function app. For more information, see [Unit Testing](https://aka.ms/azure-functions/python/unit-testing).
-* **.funcignore** - (Optional) Declares files that shouldn't get published to Azure. Usually, this file contains .vscode/ to ignore your editor setting, .venv/ to ignore local Python virtual environment, tests/ to ignore test cases, and local.settings.json to prevent local app settings being published.
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
 
-Each function has its own code file and binding configuration file ([**function.json**](https://aka.ms/azure-functions/python/function.json)).
+You focus on the code that matters most to you, in the most productive language for you, and Azure Functions handles the rest.
 
-#### Developing your first Python function using VS Code
+**Supported Languages: C#, Java, JavaScript, PowerShell, or Python, or use a custom handler to use virtually any other language.**
 
-If you have not already, please checkout our [quickstart](https://aka.ms/azure-functions/python/quickstart) to get you started with Azure Functions developments in Python. 
+&nbsp;<br>
 
-#### Publishing your function app to Azure 
+## What are Durable Functions?
 
-For more information on deployment options for Azure Functions, please visit this [guide](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python#publish-the-project-to-azure).
+Durable Functions is an extension of Azure Functions that lets you write stateful functions in a serverless compute environment. The extension lets you define stateful workflows by writing orchestrator functions and stateful entities by writing entity functions using the Azure Functions programming model. Behind the scenes, the extension manages state, checkpoints, and restarts for you, allowing you to focus on your business logic.
 
-#### Next Steps
+- Pattern #1: Function chaining
+- Pattern #2: Fan out/fan in
+- Pattern #3: Async HTTP APIs
+- Pattern #4: Monitor
+- Pattern #5: Human interaction
+- Pattern #6: Aggregator (stateful entities)
 
-* To learn more about developing Azure Functions, please visit [Azure Functions Developer Guide](https://aka.ms/azure-functions/python/developer-guide).
-
-* To learn more specific guidance on developing Azure Functions with Python, please visit [Azure Functions Developer Python Guide](https://aka.ms/azure-functions/python/python-developer-guide).
+&nbsp;<br>
 
 
+## Form Recognizer Orchestration with Durable Functions
 ### High-Level Solution Architecture
+&nbsp;<br>
 ![Alt text](assets/HLD.svg "a title")
-
+&nbsp;<br>
+&nbsp;<br>
 ### Application Architecture - Example 1
+&nbsp;<br>
 ![Alt text](assets/App_Exp_Example_1.svg "a title")
-
+&nbsp;<br>
+&nbsp;<br>
 ### Application Architecture - Example 2
+&nbsp;<br>
 ![Alt text](assets/App_Exp_Example_2.svg "a title")
-
+&nbsp;<br>
+&nbsp;<br>
 ### Application Architecture - Example 3
+&nbsp;<br>
 ![Alt text](assets/App_Exp_Example_3.svg "a title")
-
+&nbsp;<br>
+&nbsp;<br>
+## Workflow
 ### Workflow - Single Document
+&nbsp;<br>
 ![Alt text](assets/Workflow_Single_Document.svg "a title")
-
+&nbsp;<br>
+&nbsp;<br>
 ### Workflow - Multiple Documents
+&nbsp;<br>
 ![Alt text](assets/Workflow_Multiple_Documents.svg "a title")
+&nbsp;<br>
 
-### Network Architecture
+## Network Architecture
+&nbsp;<br>
 ![Alt text](assets/Network.svg "a title")
+&nbsp;<br>
