@@ -20,10 +20,12 @@ async def main(myblob: func.InputStream, starter: str, execution: func.Out[str])
 
     content = {
         'docs': [
-            f"{myblob.uri}?{sas_token}",
+            f"{myblob.uri}",
         ]
     }
-       
+    logging.info("----------------------")    
+    logging.info(content)
+    logging.info("----------------------")    
 
     instance_id = await client.start_new("ExtractCertificate", None, content)    
 
