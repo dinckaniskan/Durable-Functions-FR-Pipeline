@@ -5,6 +5,13 @@
       "name": "name",
       "type": "activityTrigger",
       "direction": "in"
+    },
+    {
+      "name": "myblob",
+      "type": "blobTrigger",      
+      "path": "blob-trigger/{name}",
+      "connection": "AzureBlobStorage",
+      "direction": "out"
     }
   ]
 }
