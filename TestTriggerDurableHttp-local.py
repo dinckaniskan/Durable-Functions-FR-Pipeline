@@ -1,7 +1,7 @@
 import requests
 import time
 
-post_url = 'https://testingfrapp.azurewebsites.net/api/orchestrators/ExtractCertificate?code=pOFpSCiy55OXj0mRfhwF4ezFDo1p_iS6RIM_meCe4Z3XAzFuBVxzHQ=='
+post_url = 'http://localhost:7071/api/orchestrators/ExtractCertificate'
 
 body = {
     'docs': [
@@ -9,12 +9,9 @@ body = {
     ]
 }
 
-r = requests.post(post_url, json=body)
+r = requests.post(post_url, json=body).json()
 
 print(r)
-print(r.text)
-
-r = r.json()
 
 get_url = r['statusQueryGetUri']
 r = requests.get(get_url).json()

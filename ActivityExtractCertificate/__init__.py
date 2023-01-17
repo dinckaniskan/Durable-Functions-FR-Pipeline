@@ -66,12 +66,6 @@ def analyze_document(filepath, page):
                 outlog.append(f"...content on page {region.page_number} is within bounding polygon \n")
 
     outlog.append("----------------------------------------")
-    
-    import uuid
-    
-    with open(str(uuid.uuid4()), 'w', encoding='utf-8') as f:
-        f.write('\n'.join(outlog))
-
 
     return kvs
 
@@ -81,10 +75,6 @@ def main(collection: str) -> str:
     logging.info(str(collection))
 
     output = analyze_document(collection[0], collection[1])
-
-    id = str(uuid.uuid4())
-    with open(f'{id}.json', 'w') as f:
-        f.write(json.dumps(output))
 
     return {
         'filepath': collection[0],
